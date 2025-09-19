@@ -28,6 +28,3 @@ This work was supported in part by the project PID2022-137646OB-C32 under Grant 
 UE,
 by the [Ministry of Science and Innovation (SPAIN)](https://www.ciencia.gob.es/) and in part by the project MASE
 RDS-PTR_22_24_P2.1 Cybersecurity (Italy). 
-
-
-Tendrías accesible todo en la siguiente [URL](http://localhost:8000/index.html#!)

@@ -1,0 +1,52 @@
+cff-version: 1.2.0
+message: "If you cite this replication package, please cite it as below."
+authors:
+  - family-names: "Augusto"
+    given-names: "Cristian"
+    orcid: "https://orcid.org/0000-0001-6140-1375"
+  - family-names: "Bertolino"
+    given-names: "Antonia"
+    orcid: "https://orcid.org/0000-0001-8749-1356"
+  - family-names: "De Angelis"
+    given-names: "Guglielmo"
+    orcid: "https://orcid.org/0000-0002-1076-0076"
+  - family-names: "Lonetti"
+    given-names: "Francesca"
+    orcid: "https://orcid.org/0000-0002-4864-2219"
+  - family-names: "Morán"
+    given-names: "Jesús"
+    orcid: "https://orcid.org/0000-0002-7544-3901"
+title: "Replication package for 'Large Language Models for Software Testing: A Research Roadmap'"
+version: "1.0"
+doi: "TO-DO"
+date-released: "2024-09-20"
+url: "https://github.com/giis-uniovi/retorch-llmexpstudy-rp"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Augusto"
+      given-names: "Cristian"
+      orcid: "https://orcid.org/0000-0001-6140-1375"
+    - family-names: "Bertolino"
+      given-names: "Antonia"
+      orcid: "https://orcid.org/0000-0001-8749-1356"
+    - family-names: "De Angelis"
+      given-names: "Guglielmo"
+      orcid: "https://orcid.org/0000-0002-1076-0076"
+    - family-names: "Lonetti"
+      given-names: "Francesca"
+      orcid: "https://orcid.org/0000-0002-4864-2219"
+    - family-names: "Morán"
+      given-names: "Jesús"
+      orcid: "https://orcid.org/0000-0002-7544-3901"
+  title: "Large Language Models for Software Testing: A Research Roadmap"
+  year: 2025
+  journal: 
+    name: "TO-DO"
+    volume: "TO-DO"
+    issue: "TO-DO"
+    pages:
+      start: 239
+      end: 255
+    publisher: "TO-DO"
+  doi: "TO-DO"

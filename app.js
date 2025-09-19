@@ -235,7 +235,7 @@ function initDataTable(data, headers) {
                             data-title="${encodeURIComponent(row[headers.indexOf("TITLE")] || "")}"
                             data-abstract="${encodeURIComponent(data)}"
                             onclick="showAbstractFromAttr(this)">
-                            <i class="material-icons">info</i></a>`
+                            info</a>`
                         : "",
             },
         ],

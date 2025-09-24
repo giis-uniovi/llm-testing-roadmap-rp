@@ -4,8 +4,9 @@
 This repository contains the replication package of the paper *Large Language Models for Software Testing: A Research Roadmap*
 published at *TO-DO*
 
-The replication package includes the raw data used in the roadmap, along with an [interactive view hosted in GitHub Pages](https://giis-uniovi.github.io/llm-testing-roadmap-rp/
-). The raw dataset is available in the [/data](/data) directory and is also archived on [Zenodo](https://doi.org/10.5281/zenodo.17144161) 
+This replication package includes the raw data from the papers analyzed in the roadmap and an [interactive view of them hosted in GitHub Pages] (https://giis-uniovi.github.io/llm-testing-roadmap-rp/
+). The raw dataset is a csv file available in the [/data](/data) directory and its structure (columns) is as follows: (**describe in form of list the columns of csv**).
+The replication package is also archived on [Zenodo](https://doi.org/10.5281/zenodo.17144161) 
 
 ## Contributing
 

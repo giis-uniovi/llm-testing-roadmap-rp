@@ -4,8 +4,23 @@
 This repository contains the replication package of the paper *Large Language Models for Software Testing: A Research Roadmap*
 published at *TO-DO*
 
-This replication package includes the raw data from the papers analyzed in the roadmap and an [interactive view of them hosted in GitHub Pages] (https://giis-uniovi.github.io/llm-testing-roadmap-rp/
-). The raw dataset is a csv file available in the [/data](/data) directory and its structure (columns) is as follows: (**describe in form of list the columns of csv**).
+This replication package includes the raw data from the articles analyzed in the roadmap and an [interactive view of them hosted on GitHub Pages](https://giis-uniovi.github.io/llm-testing-roadmap-rp/). The raw dataset is a CSV file available in the [/data](/data) directory, with a structure (columns) as follows:
+- **Id:** Internal reference used in the study.
+- **Title:** Title of the article.
+- **Year:** Publication year or when it was made available on arXiv.
+- **Key:** BibTeX key.
+- **Published into:** Name of the journal or conference where it is published.
+- **Publication type:** Type of publication: Conference, Journal, or arXiv.
+- **Bibtex:** BibTeX entry of the publication.
+- **Type of work:** Type of contribution: Survey, Comparison, and Research Contribution.
+- **Abstract:** Short abstract retrieved from the article.
+- **Category:** Type of LLM-based testing: Unit Test Generation, High-Level Test Generation, Oracle Generation, Test Augmentation or Improvement, Non-Functional Testing, and Test Agents.
+- **LLM-Approach:** Type of LLM approach: LLM-Pure Prompting, Hybrid Prompting, LLM-Pure Fine-tune, and Hybrid Fine-tune.
+- **Benchmark:** Name or identifier of the benchmark used.
+- **LLMs Used:** Name of the model/models used in the article.
+- **Evaluation Metric:** Name of the metrics used in evaluating the article.
+- **Tool:** Name of the tool proposed by the article.
+
 The replication package is also archived on [Zenodo](https://doi.org/10.5281/zenodo.17144161) 
 
 ## Contributing

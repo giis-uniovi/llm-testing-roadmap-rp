@@ -53,6 +53,18 @@ body {
     padding: 8px;
 }
 
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-2 {
+    margin-top: 2px;
+}
+
+.max-w-200 {
+    max-width: 200px;
+}
+
 /* Card Layout */
 .card {
     flex: 1 1 auto;
@@ -82,9 +94,7 @@ body {
     padding: 4px 8px;
 }
 
-#tabla {
-    width: 100% !important;
-}
+
 
 /* Graphs / Canvas */
 .graph-wrapper {
@@ -105,7 +115,7 @@ canvas {
     max-height: 60vh !important;
 }
 
-/* Header Logo */
+/* Headers and buttons */
 .header-logo {
     height: 56px;
     max-width: 160px;
@@ -182,10 +192,24 @@ canvas {
     color: #0073e6;
 }
 
-.mt-10 {
-    margin-top: 10px;
+.show-input-field {
+    max-width: 200px;
+    width: 100%;
+    display: block;
 }
 
-.mt-2 {
-    margin-top: 2px;
+#citation-content {
+    white-space: pre-wrap;
+    font-size: 1rem;
+    font-family: monospace;
+    color: #333;
+    line-height: 1.5;
+    padding: 0.5rem;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+#tabla {
+    width: 100% !important;
 }

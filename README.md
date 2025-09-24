@@ -1,7 +1,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17144161.svg)](https://doi.org/10.5281/zenodo.17144161)
-# Replication package for *'Large Language Models  for Software Testing: A Research Roadmap'*
+# Replication package for *'Large Language Models for Software Testing: A Research Roadmap'*
 
-This repository contains the replication package of the paper *Large Language Models  for Software Testing: A Research Roadmap*
+This repository contains the replication package of the paper *Large Language Models for Software Testing: A Research Roadmap*
 published at *TO-DO*
 
 The replication package includes the raw data used in the roadmap, along with an [interactive view hosted in GitHub Pages](https://giis-uniovi.github.io/llm-testing-roadmap-rp/

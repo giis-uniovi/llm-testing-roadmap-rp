@@ -19,7 +19,7 @@ authors:
 title: "Replication package for 'Large Language Models for Software Testing: A Research Roadmap'"
 version: "1.0"
 doi: "TO-DO"
-date-released: "2024-09-20"
+date-released: "2025-09-19"
 url: "https://github.com/giis-uniovi/retorch-llmexpstudy-rp"
 preferred-citation:
   type: article

@@ -387,16 +387,16 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!data) return "";
         const authors = data.authors.map(a => `${a.family}, ${a.given}`).join(" and ");
         return `@article{Augusto2026,
-    author    = {${authors}},
-    title     = {${data.title}},
-    journal   = {${data.journal}},
-    year      = {${data.year}},
-    volume    = {${data.volume}},
-    number    = {${data.issue}},
-    pages     = {${data.pages}},
-    publisher = {${data.publisher}},
-    doi       = {${data.doi}}
-}`;
+                author    = {${authors}},
+                title     = {${data.title}},
+                journal   = {${data.journal}},
+                year      = {${data.year}},
+                volume    = {${data.volume}},
+                number    = {${data.issue}},
+                pages     = {${data.pages}},
+                publisher = {${data.publisher}},
+                doi       = {${data.doi}}
+            }`;
     }
 
     function formatCitationAPA(data) {

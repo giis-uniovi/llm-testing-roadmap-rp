@@ -108,3 +108,45 @@ canvas {
     max-width: 160px;
     padding: 0 24px;
 }
+
+.download-btn{
+    display: inline-block;
+    padding: 6px 14px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    background: #26a69a;           /* teal */
+    background-image: none;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-right: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    transition: transform .08s ease, box-shadow .12s ease;
+    vertical-align: middle;
+}
+
+.download-btn:hover{
+    background: #009688;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.10);
+}
+
+.download-btn:active{
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.download-btn:focus{
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(38,166,154,0.18);
+}
+
+.title-label {
+  font-size: 0.98rem;     /* same as your inline */
+  color: #444;            /* dark gray */
+  margin-right: 8px;      /* spacing */
+  font-weight: 600;       /* makes <b> unnecessary */
+  letter-spacing: 0.5px;  /* optional: nicer readability */
+  display: inline-block;  /* makes margin work consistently */
+  vertical-align: middle; /* aligns with buttons/links */
+}

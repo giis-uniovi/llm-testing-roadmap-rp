@@ -26,7 +26,6 @@ paper itself.
 ## Acknowledgments
 
 This work was supported in part by the project EQUAVEL (PID2022-137646OB-C32) funded by MCIN/AEI/10.13039/501100011033/FEDER,
-UE,
-by the [Ministry of Science and Innovation (SPAIN)](https://www.ciencia.gob.es/) and in part by the European [HORIZON-KDT-JU research project MATISSE](https://matisse-kdt.eu/): *"Model-based
+UE and in part by the European [HORIZON-KDT-JU research project MATISSE](https://matisse-kdt.eu/): *"Model-based
 engineering of Digital Twins for early verification and validation of Industrial Systems"*, HORIZON-KDT-JU-2023-2-
 RIA, Proposal number: 101140216-2, KDT232RIA_00017, and also by the (partial) support of the PNRR MUR project [FAIR (PE0000013)](https://www.mur.gov.it/sites/default/files/2023-02/D.D.%20341%20_PE0000013_rev181022NF.pdf).

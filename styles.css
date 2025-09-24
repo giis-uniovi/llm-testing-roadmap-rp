@@ -1,12 +1,15 @@
 /* Reset & Box Sizing */
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
@@ -87,8 +90,8 @@ body {
 .graph-wrapper {
     flex: 1 1 auto;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: upper;
+    justify-content: upper;
     min-height: 320px;
     height: 100%;
     max-height: 100%;
@@ -109,44 +112,80 @@ canvas {
     padding: 0 24px;
 }
 
-.download-btn{
+.green-btn {
     display: inline-block;
     padding: 6px 14px;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 13px;
+    font-weight: 400;
     color: #ffffff;
-    background: #26a69a;           /* teal */
+    background: #26a69a;
+    /* teal */
     background-image: none;
     border-radius: 6px;
     text-decoration: none;
     margin-right: 6px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
     transition: transform .08s ease, box-shadow .12s ease;
     vertical-align: middle;
 }
 
-.download-btn:hover{
+.green-btn:hover {
     background: #009688;
     transform: translateY(-1px);
-    box-shadow: 0 6px 14px rgba(0,0,0,0.10);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.10);
 }
 
-.download-btn:active{
+.green-btn:active {
     transform: translateY(0);
     box-shadow: none;
 }
 
-.download-btn:focus{
+.green-btn:focus {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(38,166,154,0.18);
+    box-shadow: 0 0 0 3px rgba(38, 166, 154, 0.18);
 }
 
 .title-label {
-  font-size: 0.98rem;     /* same as your inline */
-  color: #444;            /* dark gray */
-  margin-right: 8px;      /* spacing */
-  font-weight: 600;       /* makes <b> unnecessary */
-  letter-spacing: 0.5px;  /* optional: nicer readability */
-  display: inline-block;  /* makes margin work consistently */
-  vertical-align: middle; /* aligns with buttons/links */
+    font-size: 0.98rem;
+    color: #5e5b5b;
+    margin-right: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.acks-section {
+    text-align: center;
+    padding: 0.2rem 1rem;
+    color: #686666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.authors {
+    text-align: center;
+    margin: 1rem auto;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #333;
+    line-height: 1.8;
+}
+
+.authors span {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+.authors .highlight {
+    font-weight: 700;
+    color: #0073e6;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-2 {
+    margin-top: 2px;
 }

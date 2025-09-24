@@ -224,18 +224,18 @@ function initDataTable(data, headers) {
                     if (!data) return "";
                     const fileName = `${row[headers.indexOf("KEY")] || "citation"}.bib`;
                     const url = URL.createObjectURL(new Blob([data], { type: "text/plain" }));
-                    return `<a class="btn-small teal lighten-2 white-text" href="${url}" download="${fileName}">Download</a>`;
+                    return `<a class="green-btn" href="${url}" download="${fileName}">DOWNLOAD</a>`;
                 },
             },
             {
                 targets: headers.indexOf("ABSTRACT"),
                 render: (data, _, row) =>
                     data
-                        ? `<a class="btn-small modal-trigger" href="#modal-abstract"
+                        ? `<a class="green-btn" href="#modal-abstract"
                             data-title="${encodeURIComponent(row[headers.indexOf("TITLE")] || "")}"
                             data-abstract="${encodeURIComponent(data)}"
                             onclick="showAbstractFromAttr(this)">
-                            info</a>`
+                            INFO</a>`
                         : "",
             },
         ],

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Large Language Models for Software Testing: A Research Roadmap</title>
+
+  <!-- Materialize CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet" />
+  <link href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+
+  <!-- JavaScript libraries -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <header class="center-align section">
+      <h4 class="main-title teal-text text-darken-3">Large Language Models for Software Testing: A Research Roadmap</h4>
+      <div class="authors">
+        <span>
+          <b>Cristian Augusto</b><sup>2</sup>,
+          <b>Antonia Bertolino</b><sup>1</sup>,
+          <b>Guglielmo De Angelis</b><sup>3</sup>,
+          <b>Francesca Lonetti</b><sup>4</sup>,
+          <b>Jesús Morán</b><sup>2</sup>
+        </span>
+        <div class="mt-2">
+          <span><sup>1</sup>GSSI, Italy</span> &nbsp;
+          <span><sup>2</sup>University of Oviedo, Spain</span> &nbsp;
+          <span><sup>3</sup>IASI-CNR, Italy</span> &nbsp;
+          <span><sup>4</sup>ISTI-CNR, Italy</span>
+        </div>
+        <!-- Download system for data in multiple formats -->
+        <div class="mt-10">
+          <span class="title-label"><b>DOWNLOAD DATASET:</b></span>
+          <a id="download-csv" class="green-btn" download="Papers.csv">CSV</a>
+          <a id="download-json" class="green-btn" download="Papers.json">JSON</a>
+          <a id="download-xlsx" class="green-btn" download="Papers.xlsx">EXCEL</a>
+        </div>
+        <div class="mt-10">
+          <span class="title-label"><b>CITE US:</b></span>
+          <button id="show-citation" class="green-btn">
+            SHOW CITATION
+          </button>
+          <a id="download-bibtex" class="green-btn" download="Augusto2026.bib">
+            DOWNLOAD CITATION
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- Acknowledgments -->
+    <section class="acks-section">
+      <p><b>Acknowledgments:</b> The work was partially supported by the European HORIZON-KDT-JU research project
+        MATISSE: "Model-based
+        engineering of Digital Twins for early verification and validation of Industrial Systems",
+        HORIZON-KDT-JU-2023-2-RIA,
+        Proposal number: 101140216-2, KDT232RIA_00017, in part by the project PID2022-137646OB-C32 under Grant MCIN/
+        AEI/10.13039/501100011033/FEDER, UE, and also by the (partial) support of the PNRR MUR project FAIR (PE0000013).
+      </p>
+    </section>
+
+    <div class="row">
+      <div class="col s12 m12 l8">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title"><b>Article List</b></span>
+            <!-- Article count selector -->
+            <div class="show-input-field" style="max-width: 200px">
+              <select id="pageLengthSelect">
+                <option value="5" selected>5 articles</option>
+                <option value="10">10 articles</option>
+                <option value="25">25 articles</option>
+                <option value="50">50 articles</option>
+                <option value="100">100 articles</option>
+                <option value="-1">All articles</option>
+              </select>
+            </div>
+            <table id="tabla" class="striped highlight responsive-table"></table>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m12 l4">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title"><b>Data Insights</b></span>
+            <div class="input-field">
+              <select id="graficoSelect">
+                <option value="ano" selected>📅 Articles-Year</option>
+                <option value="llmsused">🤖 LLMs Used</option>
+                <option value="benchmarks">⏱️ Benchmarks Used</option>
+                <option value="metrics">📐 Metrics Used</option>
+                <option value="category">🗄️ Categories</option>
+                <option value="conferences">🎤 Conferences</option>
+                <option value="journals">📚 Journals</option>
+              </select>
+              <label for="graficoSelect">Select the type of Graph</label>
+            </div>
+            <div class="graph-wrapper">
+              <canvas id="grafica"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for abstract -->
+  <div id="modal-abstract" class="modal">
+    <div class="modal-content">
+      <h5 id="modal-abstract-title"></h5>
+      <p id="modal-abstract-content"></p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+
+  <!-- Citation Modal -->
+  <div id="modal-citation" class="modal">
+    <div class="modal-content">
+      <h5>Citation</h5>
+      <pre id="citation-content"></pre>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+      <a href="#" id="copy-citation" class="waves-effect waves-teal btn-flat">Copy</a>
+    </div>
+  </div>
+</body>
+
+</html>
